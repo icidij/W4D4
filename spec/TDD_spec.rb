@@ -30,4 +30,29 @@ describe Array do
         end
 
     end
+    describe "#my_transpose" do
+        subject(:array) { [
+            [0, 1, 2],
+            [3, 4, 5],
+            [6, 7, 8]
+          ] } 
+
+        context "when a 2D array is given" do
+            it "should transpose the arrays" do
+                expect(array.my_transpose).to eq( [
+                    [0, 3, 6],
+                    [1, 4, 7],
+                    [2, 5, 8]
+                ])
+            end
+
+            it "should return a new 2D array" do
+                expect(array.my_transpose).to_not be(array)
+  
+                
+            end
+        end
+    end 
+
+
 end
