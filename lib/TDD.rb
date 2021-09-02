@@ -25,4 +25,19 @@ class Array
         end
     end
 
+    
+    def stock_picker
+
+        sum = []
+        arr = []
+        self.each_with_index do |num1, i|
+            self.each_with_index do |num2, j|
+                arr << [i, j] if (i < j)
+               sum << (self[j] - self[i]) if i < j
+            end
+        end
+
+        arr[sum.index(sum.max)]
+    end
+
 end

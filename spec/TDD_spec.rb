@@ -57,11 +57,15 @@ describe Array do
 
 
     describe "#stock_picker" do
-        
+        subject(:array) {[20, 18, 25, 31, 28, 33]}
         context "when an array with stock prices is given" do
-            it "return the most profitable pair of days"
-            it "you can't sell stock before you buy it!"
+            it "return the most profitable pair of days" do
+                expect(array.stock_picker).to eq([1,5])
+            end
+            it "you can't sell stock before you buy it!" do
+                expect(array.stock_picker).to_not eq([5, 1])
 
+            end
         end
 
 
