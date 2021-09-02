@@ -46,4 +46,13 @@ class Towers
         @towers[0] = [5, 4, 3, 2, 1]
     end
 
+    def move(num1, num2)    
+        self.towers[num2] << self.towers[num1].pop 
+
+        self.towers
+    end
+
+
+
+
 end
