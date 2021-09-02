@@ -48,8 +48,6 @@ class Towers
 
     def move(num1, num2)    
         self.towers[num2] << self.towers[num1].pop 
-
-        self.towers
     end
 
 

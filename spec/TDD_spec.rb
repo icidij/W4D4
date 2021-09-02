@@ -68,7 +68,7 @@ describe Array do
     #         end
     #     end
     # end
-subject(:array) { Towers.new }
+    subject(:array) { Towers.new }
     describe "#initialize" do 
         
         context "when it is instantiated" do
@@ -83,7 +83,8 @@ subject(:array) { Towers.new }
     describe "#move" do  #spec for move
         context "when the position is given" do
             it "should move to the valid position" do
-                expect(array.move(0,2)).to eq([[5, 4, 3, 2], [], [1]])
+                array.move(0,2)
+                expect(array.towers).to eq([[5, 4, 3, 2], [], [1]])
             end
 
 
