@@ -21,7 +21,6 @@ class Array
         (0..self.length-1).map do |i|
             self.map do |subarr|
                 subarr[i]
-
             end
         end
     end

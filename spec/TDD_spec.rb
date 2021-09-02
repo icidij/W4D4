@@ -30,6 +30,7 @@ describe Array do
         end
 
     end
+
     describe "#my_transpose" do
         subject(:array) { [
             [0, 1, 2],
@@ -55,4 +56,14 @@ describe Array do
     end 
 
 
+    describe "#stock_picker" do
+        
+        context "when an array with stock prices is given" do
+            it "return the most profitable pair of days"
+            it "you can't sell stock before you buy it!"
+
+        end
+
+
+    end
 end
